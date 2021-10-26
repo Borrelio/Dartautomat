@@ -172,58 +172,58 @@ void Page1ButtonEvent()
   //Soccer starten
   if ((mouseX > 25) && (mouseX<displayWidth-25) && (mouseY >430) && (mouseY<630) && (page1==true))
   {
-        //PrintWriter output=null;
-        //Aktualisierung[6]= "Programm schließen!";
-        //Aktualisierung[7]= "0";      //Programm soll sich nicht schließen 
-        //saveStrings( Pfad_Status, Aktualisierung);
+        PrintWriter output=null;
+        Aktualisierung[6]= "Programm schließen!";
+        Aktualisierung[7]= "0";      //Programm soll sich nicht schließen 
+        saveStrings( Pfad_Status, Aktualisierung);
 
-        //output = createWriter("DartSoccerAusfuehren.bat");
-        //output.println("cd "+sketchPath());
-        //output.println("cd ..");
-        //if(EXE == true) //kompiliertes Programm
-        //  output.println("cd ..");            
-        //switch(Betriebssystem)
-        //{
-        //  case 1: output.println("cd DartSoccer"+File.separator+"application.linux32"); break;
-        //  case 2: output.println("cd DartSoccer"+File.separator+"application.linux64"); break; 
-        //  case 3: output.println("cd DartSoccer"+File.separator+"application.linux-armv6hf"); break;
-        //  case 4: output.println("cd DartSoccer"+File.separator+"application.windows32"); break;
-        //  case 5: output.println("cd DartSoccer"+File.separator+"application.windows64"); break;
-        //}          
-        //if(Linux == true)
-        //  output.println("sudo bash DartSoccer"); 
-        //else
-        //  output.println("start DartSoccer.exe");  
-        //output.flush();
-        //output.close();  
-        //output=null; 
-        //if(Linux == true)
-        //  exec("bash",sketchPath()+"/DartSoccerAusfuehren.bat");
-        //else
-        //  launch(sketchPath()+"\\DartSoccerAusfuehren.bat");
+        output = createWriter("DartSoccerAusfuehren.bat");
+        output.println("cd "+sketchPath());
+        output.println("cd ..");
+        if(EXE == true) //kompiliertes Programm
+          output.println("cd ..");            
+        switch(Betriebssystem)
+        {
+          case 1: output.println("cd DartSoccer"+File.separator+"application.linux32"); break;
+          case 2: output.println("cd DartSoccer"+File.separator+"application.linux64"); break; 
+          case 3: output.println("cd DartSoccer"+File.separator+"application.linux-armv6hf"); break;
+          case 4: output.println("cd DartSoccer"+File.separator+"application.windows32"); break;
+          case 5: output.println("cd DartSoccer"+File.separator+"application.windows64"); break;
+        }          
+        if(Linux == true)
+          output.println("sudo bash DartSoccer"); 
+        else
+          output.println("start DartSoccer.exe");  
+        output.flush();
+        output.close();  
+        output=null; 
+        if(Linux == true)
+          exec("bash",sketchPath()+"/DartSoccerAusfuehren.bat");
+        else
+          launch(sketchPath()+"\\DartSoccerAusfuehren.bat");
     
-        //ChangingPage = 7;
+        ChangingPage = 7;
     
-        //  String[]clear  = {"","","","","","","",""};
-        //  saveStrings(Pfad_Status, clear);
+          String[]clear  = {"","","","","","","",""};
+          saveStrings(Pfad_Status, clear);
           
           
-        //  Seite2SpielmodiStartwertAktiv=0;
-        //  Seite2SpielmodiInAktiv=0;
-        //  Seite2SpielmodiOutAktiv=0;
-        //  Seite2TeilnehmerAnzahlAktiv=0;
-        //  Seite2WeiterButtonAktiv=false;
-        //  Seite3MitspielerAktiv=0;
-        //  Seite3LosButtonAktiv=false;
-        //  Seite4TexteingabeNameAktiv=false;
-        //  Seite4HinzuButtonAktiv=false;
-        //  Seite6SpielNeustartenAktiv=false;
-        //  Seite6ZumHauptmenuAktiv=false;
+          Seite2SpielmodiStartwertAktiv=0;
+          Seite2SpielmodiInAktiv=0;
+          Seite2SpielmodiOutAktiv=0;
+          Seite2TeilnehmerAnzahlAktiv=0;
+          Seite2WeiterButtonAktiv=false;
+          Seite3MitspielerAktiv=0;
+          Seite3LosButtonAktiv=false;
+          Seite4TexteingabeNameAktiv=false;
+          Seite4HinzuButtonAktiv=false;
+          Seite6SpielNeustartenAktiv=false;
+          Seite6ZumHauptmenuAktiv=false;
           
-        //  Startwert    = " " ;
-        //  SpielmodiIn  = " " ;
-        //  SpielmodiOut = " " ;
-        //  TeilnehmerAnzahl =0;
+          Startwert    = " " ;
+          SpielmodiIn  = " " ;
+          SpielmodiOut = " " ;
+          TeilnehmerAnzahl =0;
           
   }
 }
