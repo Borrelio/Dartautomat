@@ -1,0 +1,41 @@
+Haupteinstellungen (Programme greifen beim Start auf Zeilen der Datei zu)
+...Zeilen nicht verschieben!!!
+############################Dateipfade#########################
+Punkte Dartscorer**********************************************
+Scorer/Punkte.INOUT
+Spielmodi******************************************************
+Allgemein/Spielmodi.INOUT
+Status*********************************************************
+Allgemein/Status.INOUT
+Teilnehmer*****************************************************
+Datenbank/Teilnehmer.INOUT
+Soccer*********************************************************
+Soccer/Tore.INOUT
+...:
+
+...:
+
+...:
+
+...:
+
+Datenbank der Spieler*******************************************
+Datenbank/Player
+
+
+###########################Einstellungen########################
+Auswahl Display Menu (1/2/3) ***********************************
+3
+Auswahl Hauptdisplay (1/2/3) ***********************************
+1
+RGB SPI Ansteuerung wird bei Linux verwendet (1=ja/0=nein) *****
+0
+Ton An/Aus *****************************************************
+
+BS (1 Linux32/2 Linux64/3 Raspi/4 Windows32/5 Windows64) *******
+5
+etc.
+
+
+
+
